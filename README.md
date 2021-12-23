@@ -9,6 +9,7 @@
 
 [**Edit on StackBlitz** ⚡️](https://stackblitz.com/edit/js-vrmtgq)
 
+```
 @startuml
 component Comp3 #palegreen;line:green;line.dashed;text:green {
   package scr
@@ -37,3 +38,4 @@ manifest.json -> index.html
 favicon.ico -> index.html
 bandle.js -> index.html
 @enduml
+```
