@@ -8,3 +8,32 @@
 | s3         |    s1     |        s1 |
 
 [**Edit on StackBlitz** ⚡️](https://stackblitz.com/edit/js-vrmtgq)
+
+@startuml
+component Comp3 #palegreen;line:green;line.dashed;text:green {
+  package scr
+package node_modules
+package public
+}
+
+
+cloud Cloud #aliceblue;line:blue;line.dotted;text:blue{
+artifact main.chunk.js
+artifact "vendor~main.chunk.js" as vendor
+artifact manifest.json
+artifact favicon.ico
+artifact index.html
+artifact bandle.js
+}
+
+scr -> main.chunk.js
+node_modules -> vendor
+public -> manifest.json
+public -> favicon.ico
+public -> index.html
+main.chunk.js -> index.html
+vendor -> index.html
+manifest.json -> index.html
+favicon.ico -> index.html
+bandle.js -> index.html
+@enduml
